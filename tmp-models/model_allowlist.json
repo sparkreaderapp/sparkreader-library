@@ -58,13 +58,14 @@
       "taskTypes": ["llm_chat", "llm_prompt_lab"]
     },
     {
-      "name": "Qwen2.5-1.5B-Instruct q8",
-      "modelId": "litert-community/Qwen2.5-1.5B-Instruct",
-      "modelFile": "Qwen2.5-1.5B-Instruct_multi-prefill-seq_q8_ekv1280.task",
-      "modelLink": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
-      "description": "A variant of [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) with 8-bit quantization ready for deployment on Android using the [MediaPipe LLM Inference API](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference)",
-      "sizeInBytes": 1625493432,
-      "estimatedPeakMemoryInBytes": 2684354560,
+      "name": "test",
+      "modelId": "test",
+      "modelFile": "library-v1.0.zip",
+      "modelLink": "https://google.com",
+      "modelDownloadLink": "https://github.com/sparkreaderapp/sparkreader-library/raw/refs/heads/main/release/library-v1.0.zip",
+      "description": "test", 
+      "sizeInBytes": 16400541,
+      "estimatedPeakMemoryInBytes": 16400541,
       "version": "20250514",
       "defaultConfig": {
         "topK": 40,
