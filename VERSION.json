@@ -1,1 +1,7 @@
-{"version": "1.2.2", "date": "2023-10-01", "changes": "This is a test", "sizeInBytes": 16400567, "checksum": "abc123def456"}
+{
+  "version": "1.2.3",
+  "date": "2025-07-22",
+  "changes": "",
+  "sizeInBytes": 16405747,
+  "sha256sum": "29b214ee90d8a707282cdaa719beb64e6a486ce4ce70c82b1ecfac6a098f93c0"
+}
