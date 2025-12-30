@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sparkreaderapp/sparkreader-library/main/catalog/catalog.schema.json",
+  "title": "BookList",
+  "description": "A list of book metadata objects used by SparkReader Library.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "title",
+      "tags",
+      "author",
+      "date",
+      "description",
+      "file",
+      "source",
+      "source_link"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the book"
+      },
+      "title": {
+        "type": "string",
+        "description": "Title of the book"
+      },
+      "tags": {
+        "type": "string",
+        "description": "Comma-separated list of classification tags. Valid tags are defined in tags.txt: https://raw.githubusercontent.com/sparkreaderapp/sparkreader-library/main/catalog/tags.txt"
+      },
+      "author": {
+        "type": "string",
+        "description": "Author(s) name(s)"
+      },
+      "date": {
+        "type": "string",
+        "description": "Publication year",
+        "pattern": "^[0-9]{4}$"
+      },
+      "description": {
+        "type": "string",
+        "description": "Short description or abstract of the book"
+      },
+      "file": {
+        "type": "string",
+        "description": "Relative path to the plain text file within the released library.zip"
+      },
+      "source": {
+        "type": "string",
+        "description": "Origin or publisher of the text"
+      },
+      "source_link": {
+        "type": "string",
+        "format": "uri",
+        "description": "Canonical URL of the original source"
+      }
+    }
+  }
+}
