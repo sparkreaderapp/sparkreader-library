@@ -9,4 +9,4 @@ This repository contains the **catalog** used by the [SparkReader](https://spark
 - `VERSION.md` — latest library version information used by the app  
 
 ## Releases
-GitHub Releases provide the **downloadable library bundle** (`library.zip`) and **cataog** for each version. Catalogs are also version-controlled in the repository are accessible via git tags
+GitHub Releases provide the **downloadable library bundle** (`library.zip`) and **cataog** for each version. Catalogs are also version-controlled in the repository under `catalog/catalog.json` are accessible via git tags
