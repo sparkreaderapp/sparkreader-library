@@ -6,24 +6,25 @@ This repository contains the **catalog** used by the [SparkReader](https://spark
 
 The SparkReader Library is a curated collection of seminal public domain books spanning the entirety of human history—from ancient times to the present—and across diverse world regions. Our selection covers a wide range of disciplines, including philosophy, religion, science, and law, as well as literary fiction genres such as crime, thriller, and mystery, and non-fiction categories such as travel writing and biographies.
 
-All books are sourced from Project Gutenberg and other public domain collections, ensuring they are freely available and legally distributable.
+All books are sourced from [Project Gutenberg](https://www.gutenberg.org/) and other public domain collections.
 
-## Contents
-- `catalog.json` — canonical catalog consumed by the app  
-- `schema/` — JSON schema for validating the catalog  
-- `tags.txt` — tags referenced by the catalog  
-- `VERSION.md` — latest library version information used by the app  
 
 ## Library Creation Pipeline
 
-The library is created through a systematic pipeline process:
+The library is created through a pipeline process:
 
-1. **Tag-based Curation**: Starting with predefined tags in `tags.txt`, an LLM creates an initial catalog of books that best represent each category
-2. **Project Gutenberg Matching**: The curated list is matched against the Project Gutenberg catalog to find corresponding PG IDs
-3. **Content Validation**: Books are downloaded and validated; entries without downloadable text or broken symlinks are removed
-4. **Metadata Completion**: LLM completes the tagging and metadata for all validated items
-5. **Schema Validation**: All entries are validated against the JSON schema to ensure consistency
+1. **Tag-based Curation**: Starting with the [predefined tags](catalog/tags.txt), a state-of-the-art foundational large language model (LLM) creates an initial catalog of books that best represent each category
+2. **Project Gutenberg Matching**: The curated list is matched against the [Project Gutenberg catalog](https://www.gutenberg.org/ebooks/offline_catalogs.html) to find corresponding Project Gutenberg IDs
+3. **Content Validation**: The catalog is deduplicated, then the books are downloaded and validated; entries without downloadable text or broken links are removed
+4. **Metadata Completion**: An LLM completes the tagging and metadata for all validated items
+5. **Catalog Creation**: A catalog is created and validated against the [JSON schema](schema/catalog.schema.json) to ensure consistency
 6. **Release Preparation**: The final catalog and book files are packaged into versioned release bundles
+
+## Contents
+- `catalog/catalog.json` — canonical catalog consumed by the app  
+- `catalog/tags.txt` — tags referenced by the catalog  
+- `schema/catalog.schema.json` — JSON schema for validating the catalog  
+- `VERSION.md` — latest library version information used by the app
 
 ## Schema
 
