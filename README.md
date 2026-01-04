@@ -4,7 +4,7 @@ This repository contains the **catalog** used by the [SparkReader](https://spark
 
 ## About the Library
 
-The SparkReader Library is a curated collection of seminal public domain books spanning the entirety of human history—from ancient times to the present—and across diverse world regions. Our selection covers a wide range of disciplines, including philosophy, religion, science, and law, as well as literary fiction genres such as crime, thriller, and mystery, and non-fiction categories such as travel writing and biographies.
+The SparkReader Library is a curated collection of seminal public domain books spanning the entirety of human history, from ancient times to the present, and across diverse world regions. Our selection covers a wide range of disciplines, including philosophy, religion, science, and law, as well as literary fiction genres such as crime, thriller, and mystery, and non-fiction categories such as travel writing and biographies.
 
 All books are sourced from [Project Gutenberg](https://www.gutenberg.org/) and other public domain collections.
 
@@ -40,8 +40,7 @@ The library uses a JSON schema (`schema/catalog.schema.json`) to validate book m
 - **source**: Origin or publisher
 - **source_link**: Canonical URL of original source
 
-## Discussion and Contributions
-
+## Discussion and Contributing
 We welcome discussions about books, suggestions for new additions, and feedback on the library content. Please use the [GitHub Issues](https://github.com/sparkreaderapp/sparkreader-library/issues) section of this repository to:
 
 - Suggest new books for inclusion
@@ -49,7 +48,7 @@ We welcome discussions about books, suggestions for new additions, and feedback 
 - Report issues with book content or metadata
 - Propose improvements to the curation process
 
-For app-related issues and feature requests, please visit the main [SparkReader repository](https://github.com/sparkreaderapp/sparkreader).
+For app-related issues and feature requests, please visit the [SparkReader app repository](https://github.com/sparkreaderapp/sparkreader).
 
 ## Releases
 GitHub Releases provide the **downloadable library bundle** (`library.zip`) and **catalog** for each version. Catalogs are also version-controlled in the repository under `catalog/catalog.json` and are accessible via git tags
