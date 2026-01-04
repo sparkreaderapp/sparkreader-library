@@ -40,5 +40,16 @@ The library uses a JSON schema (`schema/catalog.schema.json`) to validate book m
 - **source**: Origin or publisher
 - **source_link**: Canonical URL of original source
 
+## Discussion and Contributions
+
+We welcome discussions about books, suggestions for new additions, and feedback on the library content. Please use the [GitHub Issues](https://github.com/sparkreaderapp/sparkreader-library/issues) section of this repository to:
+
+- Suggest new books for inclusion
+- Discuss existing books in the library
+- Report issues with book content or metadata
+- Propose improvements to the curation process
+
+For app-related issues and feature requests, please visit the main [SparkReader repository](https://github.com/sparkreaderapp/sparkreader).
+
 ## Releases
 GitHub Releases provide the **downloadable library bundle** (`library.zip`) and **catalog** for each version. Catalogs are also version-controlled in the repository under `catalog/catalog.json` and are accessible via git tags
